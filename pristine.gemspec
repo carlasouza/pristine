@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.executables  = Dir['bin/*'].map{ |f| File.basename(f) }
   s.require_path = 'lib'
 
-  s.add_dependency('rb-inotify', '~> 0.9')
+  s.add_dependency('rb-inotify', '~> 0.9.7')
+  s.add_dependency('parseconfig', '~> 1.0.8')
 end
 
