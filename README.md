@@ -2,21 +2,34 @@
 
 Watches if any file managed by Puppet was modified.
 
-# Workflow
+```
+$ ./example/create_example_files.sh
+$ ./bin/pristine example.config
+W, [2016-04-17T19:18:34.376080 #29074]  WARN -- : /foo/bar does not exist.
+I, [2016-04-17T19:18:34.376153 #29074]  INFO -- : /tmp/pristine/example/ watcher created.
+I, [2016-04-17T19:18:34.376190 #29074]  INFO -- : /tmp/pristine/example/a watcher created.
+I, [2016-04-17T19:18:34.376226 #29074]  INFO -- : /tmp/pristine/example/a/c watcher created.
+I, [2016-04-17T19:18:34.376260 #29074]  INFO -- : /tmp/pristine/example/a/d watcher created.
+I, [2016-04-17T19:18:34.376292 #29074]  INFO -- : /tmp/pristine/example/b watcher created.
+```
+
+Modify file /tmp/pristine/example/a/c
+
+```
+I, [2016-04-17T19:19:28.959390 #29074]  INFO -- : /tmp/pristine/example/a/c - [:modify]
+```
+
+
+# TODO
 
   * Check if `puppet` is installed
-  * Get list of file resources /var/lib/puppet/state
 
-      filter out concats
+  * Filter out concats from resources file
 
   * Check if file or directory
 
       If directory, monitor recursevly
 
-  * Create a inotify watcher to that list
-  * When triggered, store timestamp, file name, PID and user
-
-# TODO
 
   * Add `:access` to files that contain passwords
 
