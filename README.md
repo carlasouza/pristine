@@ -1,4 +1,4 @@
-# Don't touch it
+# Pristine
 
 Watches if any file managed by Puppet was modified.
 
