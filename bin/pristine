@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+unless $LOAD_PATH.include?(File.dirname(__FILE__) + '/../lib/')
+  $LOAD_PATH << File.dirname(__FILE__) + '/../lib'
+end
+
+require 'pristine/config'
+require 'pristine/daemon'
+
+config_file = ARGV.first
+abort('No configuration file specified') if config_file.nil?
+
+Pristine::Config.load config_file
+Pristine::Daemon.run

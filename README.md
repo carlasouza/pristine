@@ -18,7 +18,10 @@ Watches if any file managed by Puppet was modified.
 
 # TODO
 
-Add `:accessed` to files that contain passwords
+  * Add `:access` to files that contain passwords
+
+  * Add a watcher to the `file_list` file
+
 
 # Copyright
 
