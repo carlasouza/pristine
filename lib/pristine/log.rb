@@ -15,7 +15,7 @@ module Pristine
     private
 
     def self.log
-      @@log ||= Logger.new(Pristine::Config.params['log'] || STDOUT, 'weekly')
+      @@log ||= Logger.new(Pristine::Config.log, 'weekly')
       @@log
     end
 

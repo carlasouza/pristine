@@ -7,8 +7,5 @@ end
 require 'pristine/config'
 require 'pristine/daemon'
 
-config_file = ARGV.first
-abort('No configuration file specified') if config_file.nil?
-
-Pristine::Config.load config_file
+Pristine::Config.load ARGV
 Pristine::Daemon.run

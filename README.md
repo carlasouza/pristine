@@ -2,10 +2,25 @@
 
 Watches if any file managed by Puppet was modified.
 
+# Usage
+
+```
+$ ./bin/pristine -h
+Usage: pristine [options]
+        --config FILE                Config file
+    -l, --log FILE                   Log output
+    -f, --files                      Files list to watch
+    -h, --help                       Show this message
+        --version                    Show version
+```
+
+# Example
+
+
 ```
 $ git clone https://github.com/carlasouza/pristine.git; cd pristine
 $ ./example/create_example_files.sh
-$ ./bin/pristine example.config
+$ ./bin/pristine -c config.yaml
 W, [2016-04-17T19:18:34.376080 #29074]  WARN -- : /foo/bar does not exist.
 I, [2016-04-17T19:18:34.376153 #29074]  INFO -- : /tmp/pristine/example/ watcher created.
 I, [2016-04-17T19:18:34.376190 #29074]  INFO -- : /tmp/pristine/example/a watcher created.
@@ -23,6 +38,8 @@ I, [2016-04-17T19:19:28.959390 #29074]  INFO -- : /tmp/pristine/example/a/c - [:
 
 # TODO
 
+  * Arguments sanity check
+
   * Check if `puppet` is installed
 
   * Filter out concats from resources file
@@ -31,10 +48,10 @@ I, [2016-04-17T19:19:28.959390 #29074]  INFO -- : /tmp/pristine/example/a/c - [:
 
       If directory, monitor recursevly
 
-
   * Add `:access` to files that contain passwords
 
   * Add a watcher to the `file_list` file and then reload itself upon modification
+
 
 
 # Copyright
