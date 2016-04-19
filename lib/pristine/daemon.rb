@@ -26,8 +26,10 @@ module Pristine
 
     def self.run
       set_target_files(Config.files_list)
-
       notifier.run
+    rescue Interrupt
+      notifier.stop
+      Log.info 'Stopped all watchers. Exiting.'
     end
 
   end
