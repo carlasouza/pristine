@@ -3,6 +3,7 @@
 Watches if any file managed by Puppet was modified.
 
 ```
+$ git clone https://github.com/carlasouza/pristine.git; cd pristine
 $ ./example/create_example_files.sh
 $ ./bin/pristine example.config
 W, [2016-04-17T19:18:34.376080 #29074]  WARN -- : /foo/bar does not exist.
@@ -33,7 +34,7 @@ I, [2016-04-17T19:19:28.959390 #29074]  INFO -- : /tmp/pristine/example/a/c - [:
 
   * Add `:access` to files that contain passwords
 
-  * Add a watcher to the `file_list` file
+  * Add a watcher to the `file_list` file and then reload itself upon modification
 
 
 # Copyright
