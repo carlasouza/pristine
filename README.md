@@ -4,7 +4,7 @@ Watches if any file managed by Puppet was modified.
 
 # Installation
 
-`gem install pristine`
+` $ gem install pristine`
 
 # Usage
 
