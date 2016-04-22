@@ -68,6 +68,6 @@ I, [2016-04-17T19:19:28.959390 #29074]  INFO -- : /tmp/pristine/example/a/c - [:
 
 # Copyright
 
-Copyright (C) 2016 Carla Souza <carlasouza.com>.
+Copyright &copy; 2016 Carla Souza &lt;carlasouza.com&gt;.
 
-License GPLv3+: GNU GPL version 3 or later <gnu.org/licenses/gpl.html>. This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.
+License GPLv3+: GNU GPL version 3 or later &lt;gnu.org/licenses/gpl.html&gt;. This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.
