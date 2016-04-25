@@ -1,5 +1,9 @@
 # Pristine
 
+[![Gem Version](https://badge.fury.io/rb/pristine.svg)](http://badge.fury.io/rb/pristine)
+[![Reference Status](https://www.versioneye.com/ruby/pristine/reference_badge.svg)](https://www.versioneye.com/ruby/pristine/references)
+[![Dependency Status](https://www.versioneye.com/ruby/pristine/0.0.3/badge?style=flat)](https://www.versioneye.com/ruby/pristine/0.0.3)
+
 Watches if any file managed by Puppet was modified.
 
 # Installation
